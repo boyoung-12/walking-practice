@@ -1,12 +1,15 @@
 const lion = {
     name : "simba",
     age : 3,
-    main : ture,
+    main : true,
     script : "HakunaMatata"
 };
 
 function incrementAge(lion){
-    lion.unshift(lion.age+1);
+    lion.age=lion.age+1
+    // lion.age+=1;
+    // lion.age++;
     
-}
-consol.log (incrementAge(lion));
+    return lion.age;
+};
+console.log (incrementAge(lion));
